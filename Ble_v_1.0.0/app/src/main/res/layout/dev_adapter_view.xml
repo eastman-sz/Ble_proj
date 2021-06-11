@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ble.sz.gvd.proj.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:paddingLeft="15dp"
+            android:src="@drawable/ble_icon_n"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            >
+            <com.ble.base.CustomFontTextView
+                android:id="@+id/dev_name_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s6"
+                android:textColor="@color/c12"
+                android:gravity="center_vertical"
+                android:text="SS"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+            <com.ble.base.CustomFontTextView
+                android:id="@+id/status_tip_textVie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/s4"
+                android:textColor="@color/c21"
+                android:gravity="center_vertical"
+                android:text="点击可断开"
+                />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/ble_connectting_progress_loading"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/basic_line_height" android:background="@color/c15"/>
+
+</LinearLayout>

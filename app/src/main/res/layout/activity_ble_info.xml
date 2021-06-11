@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info.BleInfoActivity"
+    android:orientation="vertical"
+    android:background="@color/sfs_page_bg_color"
+    >
+    <com.common.base.CommonTitleView
+        android:id="@+id/commonTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/transparent"
+            >
+            <com.bluetooth.demo.info.BleInfoItemView
+                android:id="@+id/bleInfoItemView0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                />
+
+            <com.bluetooth.demo.info.BleInfoItemView
+                android:id="@+id/bleInfoItemView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.bluetooth.demo.info.BleInfoItemView
+                android:id="@+id/bleInfoItemView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.bluetooth.demo.info.BleInfoItemView
+                android:id="@+id/bleInfoItemView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.bluetooth.demo.info.BleInfoItemView
+                android:id="@+id/bleInfoItemView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.bluetooth.demo.info.BleInfoItemView
+                android:id="@+id/bleInfoItemView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.bluetooth.demo.info.BleInfoItemView
+                android:id="@+id/bleInfoItemView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.bluetooth.demo.info.BleInfoItemView
+                android:id="@+id/bleInfoItemView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.bluetooth.demo.info.BleInfoItemView
+                android:id="@+id/bleInfoItemView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/transparent"
+    android:clickable="false"
+    >
+    
+   <TextView
+   android:id="@+id/top_title_view"
+   android:layout_width="match_parent"
+   android:layout_height="0dp"
+   android:background="@color/colorPrimary"
+   android:clickable="false"
+   android:enabled="false"
+   />    
+    
+<!-- =================commom_titile_bg========================== -->
+    <RelativeLayout
+    android:id="@+id/title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_below="@+id/top_title_view"
+    android:background="@color/colorPrimary" >
+
+        <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:paddingRight="40dp"
+        android:clickable="true"
+        >
+	            <com.ble.base.CustomFontTextView
+	            android:id="@+id/commom_left_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_alignParentStart="true"
+	            android:layout_marginLeft="15dp"
+	            android:drawableLeft="@drawable/back_sel"
+	            android:gravity="center"
+	            android:textColor="@color/common_title_press_color"
+	            android:textSize="@dimen/s6" />
+	
+	            <ImageView
+	            android:id="@+id/left_red_dot_imgview"
+	            android:layout_width="6dp"
+	            android:layout_height="6dp"
+	            android:layout_toRightOf="@+id/commom_left_textview"
+	            android:contentDescription="@null"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/red_dot_icon"
+	            android:visibility="gone" 
+	            />
+        </RelativeLayout>
+
+        <com.ble.base.CustomFontTextView
+        android:id="@+id/center_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/c9"
+        android:textSize="@dimen/s7"
+        />
+
+        <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/center_title_textview"
+        android:layout_alignParentRight="true" >
+	            
+	            <com.ble.base.CustomFontTextView
+	            android:id="@+id/commom_right_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="15dp"
+	            android:drawablePadding="5dp"
+	            android:gravity="center"
+	            android:paddingLeft="5dp"
+	            android:textColor="@color/common_title_press_color"
+	            android:textSize="@dimen/s6" />
+	
+	            <ImageView
+	            android:id="@+id/right_red_dot_imgview"
+	            android:layout_width="6dp"
+	            android:layout_height="6dp"
+	            android:contentDescription="@null"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/red_dot_icon"
+	            android:visibility="gone" />
+        </RelativeLayout>
+
+        <ProgressBar
+        android:id="@+id/common_bar"
+        style="@style/horizontal_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:max="100"
+        android:visibility="gone" 
+        />
+        
+        <TextView android:id="@+id/divider_line" android:layout_width="match_parent" android:layout_height="@dimen/basic_line_height" android:visibility="visible" android:background="@color/c14" android:layout_alignParentBottom="true"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ble.sz.gvd.proj.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            >
+            <com.ble.base.CustomFontTextView
+                android:id="@+id/name_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s6"
+                android:textColor="@color/c12"
+                android:gravity="center_vertical"
+                android:text="SS"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+            <com.ble.base.CustomFontTextView
+                android:id="@+id/uuid_textVie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/s4"
+                android:textColor="@color/c21"
+                android:gravity="center_vertical"
+                android:text="fds-d"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/next_step_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/nextstep_right_arrow_n"
+            android:paddingRight="15dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/basic_line_height" android:background="@color/c15"/>
+
+</LinearLayout>
